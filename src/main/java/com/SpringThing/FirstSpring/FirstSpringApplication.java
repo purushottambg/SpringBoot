@@ -10,6 +10,9 @@ public class FirstSpringApplication implements CommandLineRunner {
 
 	@Autowired
 	Apple apple;
+	@Autowired
+	Guava guava;
+
 
 	public static void main(String[] args) {
 		SpringApplication.run(FirstSpringApplication.class, args);
@@ -19,5 +22,8 @@ public class FirstSpringApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		System.out.println(apple.getApple());
 		System.out.println(apple.eatApple());
+		System.out.println(guava.GuavaEat());
+		guava.preGuava();
+		guava.postGuava();
 	}
 }
