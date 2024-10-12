@@ -11,6 +11,6 @@ public class Apple {
     }
     @Bean
     public String eatApple(){
-        return "Eating Apple from Mini Bean";
+        return "Eating Apple from Mini Bean"; //wil return this value and assign to calling things
     }
 }

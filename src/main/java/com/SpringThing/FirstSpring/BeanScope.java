@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope("prototype")
+@Scope("prototype") //Can be multiple objects created
 public class BeanScope {
     BeanScope(){} //Default constructor
     public void BeanScope(int val){
