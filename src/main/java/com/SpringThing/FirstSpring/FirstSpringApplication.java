@@ -12,6 +12,8 @@ public class FirstSpringApplication implements CommandLineRunner {
 	Apple apple;
 	@Autowired
 	Guava guava;
+	@Autowired
+	BeanScope beanScope1, beanScope2;
 
 
 	public static void main(String[] args) {
@@ -25,5 +27,7 @@ public class FirstSpringApplication implements CommandLineRunner {
 		System.out.println(guava.GuavaEat());
 		guava.preGuava();
 		guava.postGuava();
+		System.out.println("HashCode for BeanScope bean"+ beanScope1.hashCode());
+		System.out.println("HashCode for BeanScope bean"+ beanScope2.hashCode());
 	}
 }
